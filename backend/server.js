@@ -32,7 +32,7 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
   res.json(req.file);
 });
 
-app.delete("/delete", (req, res) => {
+app.delete("/upload", (req, res) => {
   console.log(`File deleted`);
   return res.status(200).json({ result: true, msg: "file deleted" });
 });
